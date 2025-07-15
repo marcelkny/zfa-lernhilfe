@@ -1,17 +1,27 @@
-[gd_scene load_steps=2 format=3 uid="uid://ctgfu0chvt15g"]
+[gd_scene load_steps=2 format=3 uid="uid://dfgbv0eopynd6"]
 
 [ext_resource type="Script" uid="uid://bvml3lk0p460q" path="res://scripts/tooth.gd" id="1_b25so"]
 
-[node name="tooth1" type="Control"]
-custom_minimum_size = Vector2(65, 60)
+[node name="tooth" type="Control"]
 layout_mode = 3
-anchors_preset = 0
-script = ExtResource("1_b25so")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_b25so")
+
+[node name="Button" type="Button" parent="."]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 0
+offset_right = 65.0
+offset_bottom = 50.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 0
+offset_right = 65.0
+offset_bottom = 50.0
+mouse_filter = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
