@@ -1,0 +1,119 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvg0u5c1ogmbh"]
+
+[ext_resource type="Script" uid="uid://dtucjmojwsnhf" path="res://scripts/mouth.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://ctgfu0chvt15g" path="res://tooth.tscn" id="2_0xm2m"]
+
+[node name="main" type="Node2D"]
+
+[node name="head" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -7.0
+offset_top = 126.0
+offset_right = 33.0
+offset_bottom = 166.0
+
+[node name="mouth" type="GridContainer" parent="head"]
+layout_mode = 0
+offset_left = 32.0
+offset_top = 85.0
+offset_right = 1119.0
+offset_bottom = 412.0
+columns = 16
+script = ExtResource("1_ig7tw")
+
+[node name="tooth1" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth2" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth3" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth4" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth5" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth6" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth7" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth8" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth9" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth10" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth11" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth12" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth13" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth14" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth15" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth16" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth17" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth18" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth19" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth20" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth21" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth22" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth23" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth24" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth25" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth26" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth27" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth28" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth29" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth30" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth31" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
+
+[node name="tooth32" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+layout_mode = 2
