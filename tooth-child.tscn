@@ -1,6 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://kk2tuw7k6huv"]
+[gd_scene load_steps=5 format=3 uid="uid://kk2tuw7k6huv"]
 
 [ext_resource type="Script" uid="uid://bvml3lk0p460q" path="res://scripts/tooth.gd" id="1_4l2qp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4l2qp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l4bal"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_b25so"]
 font_size = 30
@@ -21,6 +25,8 @@ custom_minimum_size = Vector2(106, 50)
 layout_mode = 0
 offset_right = 65.0
 offset_bottom = 50.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4l2qp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_l4bal")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 custom_minimum_size = Vector2(106, 50)

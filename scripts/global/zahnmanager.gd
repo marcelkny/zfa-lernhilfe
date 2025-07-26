@@ -1,6 +1,7 @@
 extends Node
-@onready var default_color = "#ffffff"
-@onready var select_color = "#00a5c6"
+var default_color = "#ffffff"
+var select_color = "#00a5c6"
+var color_inactive = "949494"
 
 @onready var teeth = Array()
 @onready var selected_tooth: String
@@ -40,6 +41,16 @@ func set_next_tooth_active():
 		num = 0
 	selected_tooth = teeth[num]
 
+func set_last_tooth_active():
+	var num = 0
+	for y in range(teeth.size()):
+		if teeth[y] == selected_tooth:
+			num = y-1
+	if num < 0:
+		num = teeth.size() -1
+	print(num)
+	selected_tooth = teeth[num]
+
 func set_default_colors():
 	var all_teeth = teeth
 	print(all_teeth)
@@ -63,6 +74,16 @@ func set_next_child_tooth_active():
 			num = y+1
 	if num > child_teeth.size() -1:
 		num = 0
+	child_selected_tooth = child_teeth[num]
+
+func set_last_child_tooth_active():
+	var num = 0
+	for y in range(child_teeth.size()):
+		if child_teeth[y] == child_selected_tooth:
+			num = y-1
+	if num < 0:
+		num = child_teeth.size() -1
+	print(num)
 	child_selected_tooth = child_teeth[num]
 
 func set_child_default_colors():

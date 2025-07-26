@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bvg0u5c1ogmbh"]
+[gd_scene load_steps=13 format=3 uid="uid://bvg0u5c1ogmbh"]
 
 [ext_resource type="Script" uid="uid://dtucjmojwsnhf" path="res://scripts/mouth.gd" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://dnp4avywxxv86" path="res://scripts/head.gd" id="1_lquwl"]
@@ -8,9 +8,17 @@
 [ext_resource type="Script" uid="uid://lyc8rfos1dum" path="res://scripts/tooth-child.gd" id="6_7mycd"]
 [ext_resource type="Script" uid="uid://bdlfthmld685w" path="res://scripts/button_choose_mouth.gd" id="7_272bh"]
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_272bh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5vw27"]
+
 [sub_resource type="LabelSettings" id="LabelSettings_7mycd"]
 font_size = 30
 font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kek77"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4c57u"]
 
 [node name="main" type="Node2D"]
 
@@ -322,6 +330,8 @@ layout_mode = 2
 custom_minimum_size = Vector2(500, 50)
 offset_right = 65.0
 offset_bottom = 50.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_272bh")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_5vw27")
 script = ExtResource("7_272bh")
 mouth_button_name = "adult"
 
@@ -349,6 +359,8 @@ layout_mode = 2
 custom_minimum_size = Vector2(500, 50)
 offset_right = 65.0
 offset_bottom = 50.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_kek77")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_4c57u")
 script = ExtResource("7_272bh")
 mouth_button_name = "child"
 

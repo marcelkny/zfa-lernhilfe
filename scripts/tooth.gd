@@ -11,7 +11,10 @@ func _physics_process(_delta: float) -> void:
 	
 	if Zahnmanager.selected_tooth != self.name:
 		label.hide()
-		colorRect.color = Zahnmanager.default_color
+		if Zahnmanager.selected_mouth != "adult":
+			colorRect.color = Zahnmanager.color_inactive
+		else:
+			colorRect.color = Zahnmanager.default_color
 	else:
 		label.show()
 		colorRect.color = Zahnmanager.select_color
