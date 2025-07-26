@@ -1,6 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dfgbv0eopynd6"]
+[gd_scene load_steps=3 format=3 uid="uid://dfgbv0eopynd6"]
 
 [ext_resource type="Script" uid="uid://bvml3lk0p460q" path="res://scripts/tooth.gd" id="1_b25so"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_b25so"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
 
 [node name="tooth" type="Control"]
 layout_mode = 3
@@ -23,5 +27,15 @@ layout_mode = 0
 offset_right = 65.0
 offset_bottom = 50.0
 mouse_filter = 2
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 1
+offset_right = 1.0
+offset_bottom = 23.0
+text = "11"
+label_settings = SubResource("LabelSettings_b25so")
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

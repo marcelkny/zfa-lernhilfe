@@ -1,7 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://bvg0u5c1ogmbh"]
+[gd_scene load_steps=9 format=3 uid="uid://bvg0u5c1ogmbh"]
 
 [ext_resource type="Script" uid="uid://dtucjmojwsnhf" path="res://scripts/mouth.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://dnp4avywxxv86" path="res://scripts/head.gd" id="1_lquwl"]
 [ext_resource type="PackedScene" uid="uid://dfgbv0eopynd6" path="res://tooth.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://bn7af0x0h42xa" path="res://scripts/mouth-child.gd" id="3_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://kk2tuw7k6huv" path="res://tooth-child.tscn" id="3_h2yge"]
+[ext_resource type="Script" uid="uid://lyc8rfos1dum" path="res://scripts/tooth-child.gd" id="6_7mycd"]
+[ext_resource type="Script" uid="uid://bdlfthmld685w" path="res://scripts/button_choose_mouth.gd" id="7_272bh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7mycd"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
 
 [node name="main" type="Node2D"]
 
@@ -12,140 +21,352 @@ offset_left = -7.0
 offset_top = 126.0
 offset_right = 33.0
 offset_bottom = 166.0
+script = ExtResource("1_lquwl")
 
-[node name="mouth" type="GridContainer" parent="head"]
+[node name="mouth-adult" type="GridContainer" parent="head"]
 layout_mode = 0
 offset_left = 32.0
 offset_top = 85.0
-offset_right = 1119.0
-offset_bottom = 412.0
+offset_right = 1132.0
+offset_bottom = 189.0
 columns = 16
 script = ExtResource("1_ig7tw")
 
-[node name="tooth1" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+[node name="tooth1" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "18"
+
+[node name="tooth2" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "17"
+
+[node name="tooth3" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "16"
+
+[node name="tooth4" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "15"
+
+[node name="tooth5" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "14"
+
+[node name="tooth6" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "13"
+
+[node name="tooth7" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 
-[node name="tooth2" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+[node name="tooth8" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "11"
+
+[node name="tooth9" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "21"
+
+[node name="tooth10" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "22"
+
+[node name="tooth11" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "23"
+
+[node name="tooth12" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "24"
+
+[node name="tooth13" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "25"
+
+[node name="tooth14" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "26"
+
+[node name="tooth15" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "27"
+
+[node name="tooth16" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "28"
+
+[node name="tooth17" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "48"
+
+[node name="tooth18" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "47"
+
+[node name="tooth19" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "46"
+
+[node name="tooth20" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "45"
+
+[node name="tooth21" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "44"
+
+[node name="tooth22" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "43"
+
+[node name="tooth23" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "42"
+
+[node name="tooth24" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "41"
+
+[node name="tooth25" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "31"
+
+[node name="tooth26" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "32"
+
+[node name="tooth27" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "33"
+
+[node name="tooth28" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "34"
+
+[node name="tooth29" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "35"
+
+[node name="tooth30" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "36"
+
+[node name="tooth31" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "37"
+
+[node name="tooth32" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+custom_minimum_size = Vector2(65, 50)
+layout_mode = 2
+label_number = "38"
+
+[node name="mouth-child" type="GridContainer" parent="head"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 316.0
+offset_right = 1135.0
+offset_bottom = 420.0
+columns = 10
+script = ExtResource("3_1bvp3")
+
+[node name="tooth-child1" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "55"
+
+[node name="tooth-child2" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "54"
+
+[node name="tooth-child3" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "53"
+
+[node name="tooth-child4" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "52"
+
+[node name="tooth-child5" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "51"
+
+[node name="tooth-child6" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "61"
+
+[node name="tooth-child7" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "62"
+
+[node name="tooth-child8" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "63"
+
+[node name="tooth-child9" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "64"
+
+[node name="tooth-child10" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "65"
+
+[node name="tooth-child11" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "85"
+
+[node name="tooth-child12" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "84"
+
+[node name="tooth-child13" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "83"
+
+[node name="tooth-child14" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "82"
+
+[node name="tooth-child15" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "81"
+
+[node name="tooth-child16" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "71"
+
+[node name="tooth-child17" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "72"
+
+[node name="tooth-child18" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "73"
+
+[node name="tooth-child19" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "74"
+
+[node name="tooth-child20" parent="head/mouth-child" instance=ExtResource("3_h2yge")]
+layout_mode = 2
+script = ExtResource("6_7mycd")
+label_number = "75"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1154.0
+offset_bottom = 113.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_mode = 0
+offset_top = 21.0
+offset_right = 1153.0
+offset_bottom = 71.0
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="Control" type="Control" parent="Control/HBoxContainer"]
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
 
-[node name="tooth3" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+[node name="Button_Mouth_Adult" type="Button" parent="Control/HBoxContainer/Control"]
+custom_minimum_size = Vector2(500, 50)
+offset_right = 65.0
+offset_bottom = 50.0
+script = ExtResource("7_272bh")
+mouth_button_name = "adult"
+
+[node name="ColorRect" type="ColorRect" parent="Control/HBoxContainer/Control"]
+custom_minimum_size = Vector2(500, 50)
+offset_right = 65.0
+offset_bottom = 50.0
+mouse_filter = 2
+color = Color(0.246848, 0.641569, 0.707775, 1)
+
+[node name="Label" type="Label" parent="Control/HBoxContainer/Control"]
 custom_minimum_size = Vector2(65, 50)
+offset_right = 500.0
+offset_bottom = 50.0
+text = "Erwachsenengebiss"
+label_settings = SubResource("LabelSettings_7mycd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control2" type="Control" parent="Control/HBoxContainer"]
+custom_minimum_size = Vector2(500, 50)
 layout_mode = 2
 
-[node name="tooth4" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
+[node name="Button_Mouth_Child" type="Button" parent="Control/HBoxContainer/Control2"]
+custom_minimum_size = Vector2(500, 50)
+offset_right = 65.0
+offset_bottom = 50.0
+script = ExtResource("7_272bh")
+mouth_button_name = "child"
 
-[node name="tooth5" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
+[node name="ColorRect" type="ColorRect" parent="Control/HBoxContainer/Control2"]
+custom_minimum_size = Vector2(500, 50)
+offset_right = 65.0
+offset_bottom = 50.0
+mouse_filter = 2
+color = Color(0.580392, 0.580392, 0.580392, 1)
 
-[node name="tooth6" parent="head/mouth" instance=ExtResource("2_0xm2m")]
+[node name="Label" type="Label" parent="Control/HBoxContainer/Control2"]
 custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
+offset_right = 500.0
+offset_bottom = 50.0
+text = "Kindergebiss"
+label_settings = SubResource("LabelSettings_7mycd")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="tooth7" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth8" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth9" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth10" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth11" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth12" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth13" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth14" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth15" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth16" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth17" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth18" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth19" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth20" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth21" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth22" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth23" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth24" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth25" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth26" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth27" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth28" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth29" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth30" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth31" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
-
-[node name="tooth32" parent="head/mouth" instance=ExtResource("2_0xm2m")]
-custom_minimum_size = Vector2(65, 50)
-layout_mode = 2
+[connection signal="pressed" from="Control/HBoxContainer/Control/Button_Mouth_Adult" to="head" method="_on_button_mouth_adult_pressed"]
+[connection signal="pressed" from="Control/HBoxContainer/Control2/Button_Mouth_Child" to="head" method="_on_button_mouth_child_pressed"]
