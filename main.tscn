@@ -328,6 +328,7 @@ layout_mode = 2
 
 [node name="Button_Mouth_Adult" type="Button" parent="Control/HBoxContainer/Control"]
 custom_minimum_size = Vector2(500, 50)
+layout_mode = 0
 offset_right = 65.0
 offset_bottom = 50.0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_272bh")
@@ -337,6 +338,7 @@ mouth_button_name = "adult"
 
 [node name="ColorRect" type="ColorRect" parent="Control/HBoxContainer/Control"]
 custom_minimum_size = Vector2(500, 50)
+layout_mode = 0
 offset_right = 65.0
 offset_bottom = 50.0
 mouse_filter = 2
@@ -344,6 +346,7 @@ color = Color(0.246848, 0.641569, 0.707775, 1)
 
 [node name="Label" type="Label" parent="Control/HBoxContainer/Control"]
 custom_minimum_size = Vector2(65, 50)
+layout_mode = 0
 offset_right = 500.0
 offset_bottom = 50.0
 text = "Erwachsenengebiss"
@@ -357,6 +360,7 @@ layout_mode = 2
 
 [node name="Button_Mouth_Child" type="Button" parent="Control/HBoxContainer/Control2"]
 custom_minimum_size = Vector2(500, 50)
+layout_mode = 0
 offset_right = 65.0
 offset_bottom = 50.0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_kek77")
@@ -366,6 +370,7 @@ mouth_button_name = "child"
 
 [node name="ColorRect" type="ColorRect" parent="Control/HBoxContainer/Control2"]
 custom_minimum_size = Vector2(500, 50)
+layout_mode = 0
 offset_right = 65.0
 offset_bottom = 50.0
 mouse_filter = 2
@@ -373,6 +378,7 @@ color = Color(0.580392, 0.580392, 0.580392, 1)
 
 [node name="Label" type="Label" parent="Control/HBoxContainer/Control2"]
 custom_minimum_size = Vector2(65, 50)
+layout_mode = 0
 offset_right = 500.0
 offset_bottom = 50.0
 text = "Kindergebiss"
