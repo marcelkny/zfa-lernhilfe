@@ -1,0 +1,236 @@
+[gd_scene load_steps=27 format=3 uid="uid://db742hxrqysko"]
+
+[ext_resource type="Script" uid="uid://dtucjmojwsnhf" path="res://scripts/mouth.gd" id="1_dl7w3"]
+[ext_resource type="PackedScene" uid="uid://cjk60xgn5ybdh" path="res://scenes/adult/tooth-18.tscn" id="2_3f6ig"]
+[ext_resource type="PackedScene" uid="uid://cojp5de0y5aix" path="res://scenes/adult/tooth-11.tscn" id="2_3jd1f"]
+[ext_resource type="Texture2D" uid="uid://bmufx2dthbexf" path="res://ressources/textures/ueberbiss-normales-gebiss-aussehen.jpg" id="2_rtgjb"]
+[ext_resource type="PackedScene" uid="uid://d08cgku3qluao" path="res://scenes/adult/tooth-12.tscn" id="3_71ia1"]
+[ext_resource type="PackedScene" uid="uid://dfwsq2m5tox0t" path="res://scenes/adult/tooth-17.tscn" id="3_s0sj3"]
+[ext_resource type="PackedScene" uid="uid://b55c6gu87p5j0" path="res://scenes/adult/tooth-16.tscn" id="4_h3cfw"]
+[ext_resource type="PackedScene" uid="uid://chhpaybw54lvm" path="res://scenes/adult/tooth-15.tscn" id="5_le5ev"]
+[ext_resource type="PackedScene" uid="uid://b654f0gbl57or" path="res://scenes/adult/tooth-14.tscn" id="6_85a3v"]
+[ext_resource type="PackedScene" uid="uid://bfw003751bhwa" path="res://scenes/adult/tooth-13.tscn" id="7_q05fe"]
+[ext_resource type="PackedScene" uid="uid://cevii7lmv4wu" path="res://scenes/adult/tooth-21.tscn" id="11_6i1n6"]
+[ext_resource type="PackedScene" uid="uid://bnmn4e4luoqip" path="res://scenes/adult/tooth-22.tscn" id="12_ys78o"]
+[ext_resource type="PackedScene" uid="uid://sfvp8c4orqd8" path="res://scenes/adult/tooth-23.tscn" id="13_26txv"]
+[ext_resource type="PackedScene" uid="uid://blrnuntuht5nj" path="res://scenes/adult/tooth-24.tscn" id="14_di63d"]
+[ext_resource type="PackedScene" uid="uid://cu13wl4myvfsi" path="res://scenes/adult/tooth-25.tscn" id="15_ldskt"]
+[ext_resource type="PackedScene" uid="uid://k0jgdri1qcc2" path="res://scenes/adult/tooth-26.tscn" id="16_l5kid"]
+[ext_resource type="PackedScene" uid="uid://bjtueayftua2h" path="res://scenes/adult/tooth-27.tscn" id="17_hmmw3"]
+[ext_resource type="PackedScene" uid="uid://dwxx4ewlbuiw8" path="res://scenes/adult/tooth-28.tscn" id="18_t7pwd"]
+[ext_resource type="PackedScene" uid="uid://d0qoire35phy6" path="res://scenes/adult/tooth-48.tscn" id="19_t7pwd"]
+[ext_resource type="PackedScene" uid="uid://37yvtaksej4m" path="res://scenes/adult/tooth-47.tscn" id="20_usyaf"]
+[ext_resource type="PackedScene" uid="uid://220rpljajudk" path="res://scenes/adult/tooth-46.tscn" id="21_y8skr"]
+[ext_resource type="PackedScene" uid="uid://bnpo3u5gmfqer" path="res://scenes/adult/tooth-45.tscn" id="22_bv3bb"]
+[ext_resource type="PackedScene" uid="uid://d0lebmv5lj1vf" path="res://scenes/adult/tooth-44.tscn" id="23_781sq"]
+[ext_resource type="PackedScene" uid="uid://cdarj5bn6l410" path="res://scenes/adult/tooth-43.tscn" id="24_08vle"]
+[ext_resource type="PackedScene" uid="uid://xs7l1y0hdie5" path="res://scenes/adult/tooth-42.tscn" id="25_nk3sr"]
+[ext_resource type="PackedScene" uid="uid://gmippvvxq5dh" path="res://scenes/adult/tooth-41.tscn" id="26_5351c"]
+
+[node name="mouth-adult" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 466.0
+offset_top = 120.0
+offset_right = 506.0
+offset_bottom = 160.0
+script = ExtResource("1_dl7w3")
+
+[node name="TextureRect-orientierung" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -772.0
+offset_top = -39.0
+offset_right = 906.0
+offset_bottom = 561.0
+texture = ExtResource("2_rtgjb")
+
+[node name="tooth-18" parent="." instance=ExtResource("2_3f6ig")]
+layout_mode = 1
+offset_left = -145.0
+offset_top = 184.0
+offset_right = -130.0
+offset_bottom = 199.0
+label_number = "18"
+
+[node name="tooth-17" parent="." instance=ExtResource("3_s0sj3")]
+layout_mode = 1
+offset_left = -143.0
+offset_top = 146.0
+offset_right = -128.0
+offset_bottom = 161.0
+label_number = "17"
+
+[node name="tooth-16" parent="." instance=ExtResource("4_h3cfw")]
+layout_mode = 1
+offset_left = -135.0
+offset_top = 109.0
+offset_right = -120.0
+offset_bottom = 124.0
+label_number = "16"
+
+[node name="tooth-15" parent="." instance=ExtResource("5_le5ev")]
+layout_mode = 1
+offset_left = -124.0
+offset_top = 75.0
+offset_right = -109.0
+offset_bottom = 90.0
+label_number = "15"
+
+[node name="tooth-14" parent="." instance=ExtResource("6_85a3v")]
+layout_mode = 1
+offset_left = -112.0
+offset_top = 45.0
+offset_right = -97.0
+offset_bottom = 60.0
+label_number = "14"
+
+[node name="tooth-13" parent="." instance=ExtResource("7_q05fe")]
+layout_mode = 1
+offset_left = -96.0
+offset_top = 25.0
+offset_right = -81.0
+offset_bottom = 40.0
+label_number = "13"
+
+[node name="tooth-12" parent="." instance=ExtResource("3_71ia1")]
+layout_mode = 1
+offset_left = -79.0
+offset_top = 4.0
+offset_right = -64.0
+offset_bottom = 19.0
+
+[node name="tooth-11" parent="." instance=ExtResource("2_3jd1f")]
+layout_mode = 1
+offset_left = -48.5
+offset_top = -7.5
+offset_right = -33.5
+offset_bottom = 7.5
+label_number = "11"
+
+[node name="tooth-21" parent="." instance=ExtResource("11_6i1n6")]
+layout_mode = 1
+offset_left = -12.5
+offset_top = -7.5
+offset_right = 2.5
+offset_bottom = 7.5
+label_number = "21"
+
+[node name="tooth-22" parent="." instance=ExtResource("12_ys78o")]
+layout_mode = 1
+offset_left = 18.0
+offset_top = 4.0
+offset_right = 33.0
+offset_bottom = 19.0
+label_number = "22"
+
+[node name="tooth-23" parent="." instance=ExtResource("13_26txv")]
+layout_mode = 1
+offset_left = 35.0
+offset_top = 25.0
+offset_right = 50.0
+offset_bottom = 40.0
+label_number = "23"
+
+[node name="tooth-24" parent="." instance=ExtResource("14_di63d")]
+layout_mode = 1
+offset_left = 51.0
+offset_top = 45.0
+offset_right = 66.0
+offset_bottom = 60.0
+label_number = "24"
+
+[node name="tooth-25" parent="." instance=ExtResource("15_ldskt")]
+layout_mode = 1
+offset_left = 63.0
+offset_top = 75.0
+offset_right = 78.0
+offset_bottom = 90.0
+label_number = "25"
+
+[node name="tooth-26" parent="." instance=ExtResource("16_l5kid")]
+layout_mode = 1
+offset_left = 75.0
+offset_top = 109.0
+offset_right = 90.0
+offset_bottom = 124.0
+label_number = "26"
+
+[node name="tooth-27" parent="." instance=ExtResource("17_hmmw3")]
+layout_mode = 1
+offset_left = 82.0
+offset_top = 146.0
+offset_right = 97.0
+offset_bottom = 161.0
+label_number = "27"
+
+[node name="tooth-28" parent="." instance=ExtResource("18_t7pwd")]
+layout_mode = 1
+offset_left = 85.0
+offset_top = 184.0
+offset_right = 100.0
+offset_bottom = 199.0
+label_number = "28"
+
+[node name="tooth-48" parent="." instance=ExtResource("19_t7pwd")]
+layout_mode = 1
+offset_left = -145.0
+offset_top = 251.0
+offset_right = -130.0
+offset_bottom = 266.0
+label_number = "48"
+
+[node name="tooth-47" parent="." instance=ExtResource("20_usyaf")]
+layout_mode = 1
+offset_left = -143.0
+offset_top = 289.0
+offset_right = -128.0
+offset_bottom = 304.0
+label_number = "47"
+
+[node name="tooth-46" parent="." instance=ExtResource("21_y8skr")]
+layout_mode = 1
+offset_left = -135.0
+offset_top = 327.0
+offset_right = -120.0
+offset_bottom = 342.0
+label_number = "46"
+
+[node name="tooth-45" parent="." instance=ExtResource("22_bv3bb")]
+layout_mode = 1
+offset_left = -123.0
+offset_top = 361.0
+offset_right = -108.0
+offset_bottom = 376.0
+label_number = "45"
+
+[node name="tooth-44" parent="." instance=ExtResource("23_781sq")]
+layout_mode = 1
+offset_left = -111.0
+offset_top = 390.0
+offset_right = -96.0
+offset_bottom = 405.0
+label_number = "44"
+
+[node name="tooth-43" parent="." instance=ExtResource("24_08vle")]
+layout_mode = 1
+offset_left = -95.0
+offset_top = 410.0
+offset_right = -80.0
+offset_bottom = 425.0
+label_number = "43"
+
+[node name="tooth-42" parent="." instance=ExtResource("25_nk3sr")]
+layout_mode = 1
+offset_left = -78.0
+offset_top = 432.0
+offset_right = -63.0
+offset_bottom = 447.0
+label_number = "42"
+
+[node name="tooth-41" parent="." instance=ExtResource("26_5351c")]
+layout_mode = 1
+offset_left = -48.0
+offset_top = 442.0
+offset_right = -33.0
+offset_bottom = 457.0
+label_number = "41"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bvg0u5c1ogmbh"]
+[gd_scene load_steps=14 format=3 uid="uid://bvg0u5c1ogmbh"]
 
 [ext_resource type="Script" uid="uid://dtucjmojwsnhf" path="res://scripts/mouth.gd" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://dnp4avywxxv86" path="res://scripts/head.gd" id="1_lquwl"]
@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://bn7af0x0h42xa" path="res://scripts/mouth-child.gd" id="3_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://kk2tuw7k6huv" path="res://tooth-child.tscn" id="3_h2yge"]
 [ext_resource type="Script" uid="uid://lyc8rfos1dum" path="res://scripts/tooth-child.gd" id="6_7mycd"]
+[ext_resource type="PackedScene" uid="uid://db742hxrqysko" path="res://scenes/adult/mouth_adult.tscn" id="7_5vw27"]
 [ext_resource type="Script" uid="uid://bdlfthmld685w" path="res://scripts/button_choose_mouth.gd" id="7_272bh"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_272bh"]
@@ -31,7 +32,8 @@ offset_right = 33.0
 offset_bottom = 166.0
 script = ExtResource("1_lquwl")
 
-[node name="mouth-adult" type="GridContainer" parent="head"]
+[node name="mouth-adult-2" type="GridContainer" parent="head"]
+visible = false
 layout_mode = 0
 offset_left = 32.0
 offset_top = 85.0
@@ -40,166 +42,167 @@ offset_bottom = 189.0
 columns = 16
 script = ExtResource("1_ig7tw")
 
-[node name="tooth1" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth1" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "18"
 
-[node name="tooth2" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth2" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "17"
 
-[node name="tooth3" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth3" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "16"
 
-[node name="tooth4" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth4" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "15"
 
-[node name="tooth5" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth5" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "14"
 
-[node name="tooth6" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth6" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "13"
 
-[node name="tooth7" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth7" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 
-[node name="tooth8" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth8" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "11"
 
-[node name="tooth9" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth9" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "21"
 
-[node name="tooth10" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth10" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "22"
 
-[node name="tooth11" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth11" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "23"
 
-[node name="tooth12" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth12" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "24"
 
-[node name="tooth13" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth13" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "25"
 
-[node name="tooth14" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth14" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "26"
 
-[node name="tooth15" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth15" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "27"
 
-[node name="tooth16" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth16" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "28"
 
-[node name="tooth17" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth17" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "48"
 
-[node name="tooth18" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth18" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "47"
 
-[node name="tooth19" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth19" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "46"
 
-[node name="tooth20" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth20" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "45"
 
-[node name="tooth21" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth21" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "44"
 
-[node name="tooth22" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth22" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "43"
 
-[node name="tooth23" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth23" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "42"
 
-[node name="tooth24" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth24" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "41"
 
-[node name="tooth25" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth25" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "31"
 
-[node name="tooth26" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth26" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "32"
 
-[node name="tooth27" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth27" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "33"
 
-[node name="tooth28" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth28" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "34"
 
-[node name="tooth29" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth29" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "35"
 
-[node name="tooth30" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth30" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "36"
 
-[node name="tooth31" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth31" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "37"
 
-[node name="tooth32" parent="head/mouth-adult" instance=ExtResource("2_0xm2m")]
+[node name="tooth32" parent="head/mouth-adult-2" instance=ExtResource("2_0xm2m")]
 custom_minimum_size = Vector2(65, 50)
 layout_mode = 2
 label_number = "38"
 
 [node name="mouth-child" type="GridContainer" parent="head"]
+visible = false
 layout_mode = 0
 offset_left = 35.0
 offset_top = 316.0
@@ -307,6 +310,8 @@ label_number = "74"
 layout_mode = 2
 script = ExtResource("6_7mycd")
 label_number = "75"
+
+[node name="mouth-adult" parent="head" instance=ExtResource("7_5vw27")]
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3

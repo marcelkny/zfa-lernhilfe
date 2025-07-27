@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://dfwsq2m5tox0t"]
+
+[ext_resource type="Script" uid="uid://bvml3lk0p460q" path="res://scripts/tooth.gd" id="1_jv8h7"]
+[ext_resource type="Texture2D" uid="uid://ca7ji32sjkw1t" path="res://ressources/textures/teeth-adult/17.png" id="2_jv8h7"]
+[ext_resource type="Texture2D" uid="uid://dqu5t78qk6r7r" path="res://ressources/textures/teeth-adult/17-active.png" id="3_ju5wc"]
+[ext_resource type="BitMap" uid="uid://dbg5j0vaa51d4" path="res://ressources/textures/teeth-adult/17.bmp" id="4_ju5wc"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_b25so"]
+font_size = 15
+font_color = Color(0, 0, 0, 1)
+
+[node name="tooth" type="Control"]
+custom_minimum_size = Vector2(55, 55)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jv8h7")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+custom_minimum_size = Vector2(55, 55)
+layout_mode = 1
+offset_right = 55.0
+offset_bottom = 55.0
+texture_normal = ExtResource("2_jv8h7")
+texture_pressed = ExtResource("3_ju5wc")
+texture_focused = ExtResource("3_ju5wc")
+texture_click_mask = ExtResource("4_ju5wc")
+
+[node name="Label" type="Label" parent="."]
+custom_minimum_size = Vector2(55, 55)
+layout_mode = 1
+offset_top = -1.0
+offset_right = 55.0
+offset_bottom = 54.0
+text = "17"
+label_settings = SubResource("LabelSettings_b25so")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
