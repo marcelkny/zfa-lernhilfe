@@ -6,6 +6,7 @@ var has_delivered = false
 func _ready():
 	database = SQLite.new()
 	database.path = "res://database/data.db"
+	database.read_only = true
 	database.open_db()
 
 func get_adult_teeth() -> Array:
