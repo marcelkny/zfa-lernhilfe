@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://ctfs5seosllkn"]
+
+[ext_resource type="Texture2D" uid="uid://ca7ji32sjkw1t" path="res://ressources/textures/teeth-adult/17.png" id="1_e2mru"]
+[ext_resource type="Texture2D" uid="uid://dqu5t78qk6r7r" path="res://ressources/textures/teeth-adult/17-active.png" id="2_nderd"]
+[ext_resource type="BitMap" uid="uid://dbg5j0vaa51d4" path="res://ressources/textures/teeth-adult/17.bmp" id="3_uamas"]
+[ext_resource type="Script" uid="uid://bvml3lk0p460q" path="res://scripts/tooth.gd" id="4_8act3"]
+
+[node name="tooth-a17" type="TextureButton"]
+custom_minimum_size = Vector2(55, 55)
+offset_right = 55.0
+offset_bottom = 55.0
+texture_normal = ExtResource("1_e2mru")
+texture_pressed = ExtResource("2_nderd")
+texture_focused = ExtResource("2_nderd")
+texture_click_mask = ExtResource("3_uamas")
+script = ExtResource("4_8act3")
+label_number = "17"

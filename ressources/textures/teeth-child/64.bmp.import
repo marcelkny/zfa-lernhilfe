@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://xvaw8rabrrul"
+path="res://.godot/imported/64.bmp-4ce5e189a8b22f561b2280a876b7a373.res"
+
+[deps]
+
+source_file="res://ressources/textures/teeth-child/64.bmp"
+dest_files=["res://.godot/imported/64.bmp-4ce5e189a8b22f561b2280a876b7a373.res"]
+
+[params]
+
+create_from=0
+threshold=0.5

@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bfgjxoeemw1r8"
+path="res://.godot/imported/15.bmp-94036569b549a3e9051f3c8eadd86a2a.res"
+
+[deps]
+
+source_file="res://ressources/textures/teeth-adult/15.bmp"
+dest_files=["res://.godot/imported/15.bmp-94036569b549a3e9051f3c8eadd86a2a.res"]
+
+[params]
+
+create_from=0
+threshold=0.5
