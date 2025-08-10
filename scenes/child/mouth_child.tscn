@@ -1,0 +1,241 @@
+[gd_scene load_steps=24 format=3 uid="uid://btxlwxbtt7u37"]
+
+[ext_resource type="Script" uid="uid://bn7af0x0h42xa" path="res://scripts/mouth-child.gd" id="1_4f1fe"]
+[ext_resource type="PackedScene" uid="uid://udk7rgk764bf" path="res://scenes/child/tooth-c51.tscn" id="2_wkeni"]
+[ext_resource type="Script" uid="uid://lyc8rfos1dum" path="res://scripts/tooth-child.gd" id="3_f1jb1"]
+[ext_resource type="PackedScene" uid="uid://jrbgka63torh" path="res://scenes/child/tooth-c52.tscn" id="4_ojv01"]
+[ext_resource type="PackedScene" uid="uid://buuew5vpdsuj3" path="res://scenes/child/tooth-c53.tscn" id="5_5t717"]
+[ext_resource type="PackedScene" uid="uid://prirhow1j4e1" path="res://scenes/child/tooth-c54.tscn" id="6_ffnp2"]
+[ext_resource type="PackedScene" uid="uid://cnoeml3ffqsww" path="res://scenes/child/tooth-c55.tscn" id="7_p5fct"]
+[ext_resource type="PackedScene" uid="uid://50s04egoytf7" path="res://scenes/child/tooth-c61.tscn" id="8_7q5vs"]
+[ext_resource type="PackedScene" uid="uid://cqngdsewt8d55" path="res://scenes/child/tooth-c62.tscn" id="9_aoe54"]
+[ext_resource type="PackedScene" uid="uid://c7kwaslisolj6" path="res://scenes/child/tooth-c63.tscn" id="10_gdilb"]
+[ext_resource type="PackedScene" uid="uid://bb115rccnehpb" path="res://scenes/child/tooth-c64.tscn" id="11_v85ns"]
+[ext_resource type="PackedScene" uid="uid://dbcn52y2uqv0y" path="res://scenes/child/tooth-c65.tscn" id="12_nbavc"]
+[ext_resource type="PackedScene" uid="uid://cw5b1cad1psiv" path="res://scenes/child/tooth-c71.tscn" id="13_ug8pu"]
+[ext_resource type="PackedScene" uid="uid://cdyijk3qgtwq6" path="res://scenes/child/tooth-c72.tscn" id="14_oyxs6"]
+[ext_resource type="PackedScene" uid="uid://cm82lrq6txcbj" path="res://scenes/child/tooth-c73.tscn" id="15_k7nyx"]
+[ext_resource type="PackedScene" uid="uid://b0otxsfqab340" path="res://scenes/child/tooth-c74.tscn" id="16_nagjw"]
+[ext_resource type="PackedScene" uid="uid://d2fasxpjhe50h" path="res://scenes/child/tooth-c75.tscn" id="17_v23gi"]
+[ext_resource type="PackedScene" uid="uid://clve3te73oaip" path="res://scenes/child/tooth-c81.tscn" id="18_kmmeo"]
+[ext_resource type="PackedScene" uid="uid://cutgwmwc2jxq1" path="res://scenes/child/tooth-c82.tscn" id="19_euftf"]
+[ext_resource type="PackedScene" uid="uid://ctxbjtkqocqfh" path="res://scenes/child/tooth-c83.tscn" id="20_66gvk"]
+[ext_resource type="PackedScene" uid="uid://bn0ivwstpiykh" path="res://scenes/child/tooth-c84.tscn" id="21_u0n15"]
+[ext_resource type="PackedScene" uid="uid://bit2fdmhwqi65" path="res://scenes/child/tooth-c85.tscn" id="22_15vf0"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4f1fe"]
+font_color = Color(0, 0, 0, 1)
+
+[node name="mouth-child" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_4f1fe")
+
+[node name="51" parent="." instance=ExtResource("2_wkeni")]
+layout_mode = 0
+offset_left = 848.0
+offset_top = 180.0
+offset_right = 903.0
+offset_bottom = 235.0
+script = ExtResource("3_f1jb1")
+label_number = "51"
+
+[node name="52" parent="." instance=ExtResource("4_ojv01")]
+layout_mode = 0
+offset_left = 821.0
+offset_top = 190.0
+offset_right = 876.0
+offset_bottom = 245.0
+script = ExtResource("3_f1jb1")
+label_number = "52"
+
+[node name="53" parent="." instance=ExtResource("5_5t717")]
+layout_mode = 0
+offset_left = 801.0
+offset_top = 210.0
+offset_right = 856.0
+offset_bottom = 265.0
+script = ExtResource("3_f1jb1")
+label_number = "53"
+
+[node name="54" parent="." instance=ExtResource("6_ffnp2")]
+layout_mode = 0
+offset_left = 782.0
+offset_top = 236.0
+offset_right = 837.0
+offset_bottom = 291.0
+script = ExtResource("3_f1jb1")
+label_number = "54"
+
+[node name="55" parent="." instance=ExtResource("7_p5fct")]
+layout_mode = 0
+offset_left = 768.0
+offset_top = 280.0
+offset_right = 823.0
+offset_bottom = 335.0
+script = ExtResource("3_f1jb1")
+label_number = "55"
+
+[node name="61" parent="." instance=ExtResource("8_7q5vs")]
+layout_mode = 0
+offset_left = 883.0
+offset_top = 180.0
+offset_right = 938.0
+offset_bottom = 235.0
+script = ExtResource("3_f1jb1")
+label_number = "61"
+
+[node name="62" parent="." instance=ExtResource("9_aoe54")]
+layout_mode = 0
+offset_left = 910.0
+offset_top = 190.0
+offset_right = 965.0
+offset_bottom = 245.0
+script = ExtResource("3_f1jb1")
+label_number = "62"
+
+[node name="63" parent="." instance=ExtResource("10_gdilb")]
+layout_mode = 0
+offset_left = 931.0
+offset_top = 209.0
+offset_right = 986.0
+offset_bottom = 264.0
+script = ExtResource("3_f1jb1")
+label_number = "63"
+
+[node name="64" parent="." instance=ExtResource("11_v85ns")]
+layout_mode = 0
+offset_left = 949.0
+offset_top = 236.0
+offset_right = 1004.0
+offset_bottom = 291.0
+script = ExtResource("3_f1jb1")
+label_number = "64"
+
+[node name="65" parent="." instance=ExtResource("12_nbavc")]
+layout_mode = 0
+offset_left = 962.0
+offset_top = 281.0
+offset_right = 1017.0
+offset_bottom = 336.0
+script = ExtResource("3_f1jb1")
+label_number = "65"
+
+[node name="71" parent="." instance=ExtResource("13_ug8pu")]
+layout_mode = 0
+offset_left = 883.0
+offset_top = 481.0
+offset_right = 938.0
+offset_bottom = 536.0
+script = ExtResource("3_f1jb1")
+label_number = "71"
+
+[node name="72" parent="." instance=ExtResource("14_oyxs6")]
+layout_mode = 0
+offset_left = 910.0
+offset_top = 471.0
+offset_right = 965.0
+offset_bottom = 526.0
+script = ExtResource("3_f1jb1")
+label_number = "72"
+
+[node name="73" parent="." instance=ExtResource("15_k7nyx")]
+layout_mode = 0
+offset_left = 930.0
+offset_top = 451.0
+offset_right = 985.0
+offset_bottom = 506.0
+script = ExtResource("3_f1jb1")
+label_number = "73"
+
+[node name="74" parent="." instance=ExtResource("16_nagjw")]
+layout_mode = 0
+offset_left = 949.0
+offset_top = 425.0
+offset_right = 1004.0
+offset_bottom = 480.0
+script = ExtResource("3_f1jb1")
+label_number = "74"
+
+[node name="75" parent="." instance=ExtResource("17_v23gi")]
+layout_mode = 0
+offset_left = 962.0
+offset_top = 381.0
+offset_right = 1017.0
+offset_bottom = 436.0
+script = ExtResource("3_f1jb1")
+label_number = "75"
+
+[node name="81" parent="." instance=ExtResource("18_kmmeo")]
+layout_mode = 0
+offset_left = 848.0
+offset_top = 481.0
+offset_right = 903.0
+offset_bottom = 536.0
+script = ExtResource("3_f1jb1")
+label_number = "81"
+
+[node name="82" parent="." instance=ExtResource("19_euftf")]
+layout_mode = 0
+offset_left = 821.0
+offset_top = 471.0
+offset_right = 876.0
+offset_bottom = 526.0
+script = ExtResource("3_f1jb1")
+label_number = "82"
+
+[node name="83" parent="." instance=ExtResource("20_66gvk")]
+layout_mode = 0
+offset_left = 801.0
+offset_top = 452.0
+offset_right = 856.0
+offset_bottom = 507.0
+script = ExtResource("3_f1jb1")
+label_number = "83"
+
+[node name="84" parent="." instance=ExtResource("21_u0n15")]
+layout_mode = 0
+offset_left = 782.0
+offset_top = 425.0
+offset_right = 837.0
+offset_bottom = 480.0
+script = ExtResource("3_f1jb1")
+label_number = "84"
+
+[node name="85" parent="." instance=ExtResource("22_15vf0")]
+layout_mode = 0
+offset_left = 769.0
+offset_top = 381.0
+offset_right = 824.0
+offset_bottom = 436.0
+script = ExtResource("3_f1jb1")
+label_number = "85"
+
+[node name="NumberLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+label_settings = SubResource("LabelSettings_4f1fe")
+
+[connection signal="button_down" from="51" to="51" method="_on_button_down"]
+[connection signal="button_down" from="52" to="52" method="_on_button_down"]
+[connection signal="button_down" from="53" to="53" method="_on_button_down"]
+[connection signal="button_down" from="54" to="54" method="_on_button_down"]
+[connection signal="button_down" from="55" to="55" method="_on_button_down"]
+[connection signal="button_down" from="61" to="61" method="_on_button_down"]
+[connection signal="button_down" from="62" to="62" method="_on_button_down"]
+[connection signal="button_down" from="63" to="63" method="_on_button_down"]
+[connection signal="button_down" from="64" to="64" method="_on_button_down"]
+[connection signal="button_down" from="65" to="65" method="_on_button_down"]
+[connection signal="button_down" from="71" to="71" method="_on_button_down"]
+[connection signal="button_down" from="72" to="72" method="_on_button_down"]
+[connection signal="button_down" from="73" to="73" method="_on_button_down"]
+[connection signal="button_down" from="74" to="74" method="_on_button_down"]
+[connection signal="button_down" from="75" to="75" method="_on_button_down"]
+[connection signal="button_down" from="81" to="81" method="_on_button_down"]
+[connection signal="button_down" from="82" to="82" method="_on_button_down"]
+[connection signal="button_down" from="83" to="83" method="_on_button_down"]
+[connection signal="button_down" from="84" to="84" method="_on_button_down"]
+[connection signal="button_down" from="85" to="85" method="_on_button_down"]

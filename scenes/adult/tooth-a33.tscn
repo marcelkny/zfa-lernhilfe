@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1vm8ma5yjfkj"]
+
+[ext_resource type="Texture2D" uid="uid://dex876i7hgybf" path="res://ressources/textures/teeth-adult/33.png" id="1_i6wpb"]
+[ext_resource type="Texture2D" uid="uid://ddo4pqpmx4n55" path="res://ressources/textures/teeth-adult/33-active.png" id="2_4hn3f"]
+[ext_resource type="BitMap" uid="uid://entmyf1clv2" path="res://ressources/textures/teeth-adult/33.bmp" id="3_4mke4"]
+
+[node name="tooth-a33" type="TextureButton"]
+custom_minimum_size = Vector2(55, 55)
+offset_right = 55.0
+offset_bottom = 55.0
+texture_normal = ExtResource("1_i6wpb")
+texture_pressed = ExtResource("2_4hn3f")
+texture_focused = ExtResource("2_4hn3f")
+texture_click_mask = ExtResource("3_4mke4")

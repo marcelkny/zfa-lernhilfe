@@ -1,14 +1,22 @@
 extends Control
-@onready var label = $Label
 @export var label_number: String = "12"
 
-func _ready() -> void:
-	label.text = label_number
+@onready var cur_texture_pressed = self.texture_pressed
+@onready var cur_texture_normal = self.texture_normal
 
-func _physics_process(_delta: float) -> void:
+func _ready() -> void:
 	pass
 
+func _physics_process(_delta: float) -> void:
+	if Zahnmanager.selected_tooth == label_number and Zahnmanager.selected_mouth == "adult":
+		self.texture_normal = cur_texture_pressed
+	else:
+		self.texture_normal = cur_texture_normal
 
-func _on_texture_button_pressed() -> void:
+func set_current_tooth_selected():
 	Zahnmanager.change_selected_mouth("adult")
 	Zahnmanager.set_selected_tooth(self.name)
+
+
+func _on_button_down() -> void:
+	set_current_tooth_selected()
