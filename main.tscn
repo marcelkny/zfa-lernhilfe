@@ -1,8 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://bvg0u5c1ogmbh"]
+[gd_scene load_steps=13 format=3 uid="uid://bvg0u5c1ogmbh"]
 
 [ext_resource type="Texture2D" uid="uid://bmufx2dthbexf" path="res://ressources/textures/ueberbiss-normales-gebiss-aussehen.jpg" id="1_1bvp3"]
 [ext_resource type="Script" uid="uid://dnp4avywxxv86" path="res://scripts/head.gd" id="1_lquwl"]
 [ext_resource type="PackedScene" uid="uid://btxlwxbtt7u37" path="res://scenes/child/mouth_child.tscn" id="4_lquwl"]
+[ext_resource type="Texture2D" uid="uid://1pl8oejdcvqo" path="res://ressources/textures/teeth-directions/Zahnrichtungen.png" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://1vco7seyjdml" path="res://ressources/textures/ui/window-0001.png" id="6_272bh"]
 [ext_resource type="PackedScene" uid="uid://db742hxrqysko" path="res://scenes/adult/mouth_adult.tscn" id="7_5vw27"]
 [ext_resource type="Script" uid="uid://bdlfthmld685w" path="res://scripts/button_choose_mouth.gd" id="7_272bh"]
 
@@ -11,6 +13,7 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5vw27"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7mycd"]
+line_spacing = 2.0
 font_size = 15
 font_color = Color(0, 0, 0, 1)
 
@@ -20,6 +23,11 @@ font_color = Color(0, 0, 0, 1)
 
 [node name="main" type="Node2D"]
 
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1440.0
+offset_bottom = 900.0
+color = Color(0.720467, 0.720468, 0.720467, 1)
+
 [node name="TextureRect-orientierung" type="TextureRect" parent="."]
 visible = false
 offset_left = -401.0
@@ -28,101 +36,122 @@ offset_right = 1277.0
 offset_bottom = 742.0
 texture = ExtResource("1_1bvp3")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 8.0
+offset_top = 50.2
+offset_right = 1438.0
+offset_bottom = 1170.2
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("6_7mycd")
+
 [node name="ToothContainer" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_left = -7.0
+offset_left = 271.0
 offset_top = 3.0
-offset_right = 33.0
+offset_right = 311.0
 offset_bottom = 43.0
 script = ExtResource("1_lquwl")
 
 [node name="mouth-adult" parent="ToothContainer" instance=ExtResource("7_5vw27")]
-offset_left = 756.0
-offset_top = 130.0
-offset_right = 796.0
-offset_bottom = 170.0
+offset_left = 753.0
+offset_top = 133.0
+offset_right = 793.0
+offset_bottom = 173.0
 
 [node name="mouth-child" parent="ToothContainer" instance=ExtResource("4_lquwl")]
-offset_left = 1.0
-offset_top = -2.0
-offset_right = 41.0
-offset_bottom = 38.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+offset_right = 1440.0
+offset_bottom = 900.0
+texture = ExtResource("6_272bh")
+patch_margin_left = 5
+patch_margin_top = 55
+patch_margin_right = 5
+patch_margin_bottom = 5
 
 [node name="ShowToothButtons" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1154.0
-offset_bottom = 113.0
+offset_left = 275.0
+offset_top = -5.0
+offset_right = 1429.0
+offset_bottom = 108.0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="ShowToothButtons"]
 layout_mode = 0
-offset_left = 623.0
+offset_left = 636.0
 offset_top = 9.0
-offset_right = 1143.0
+offset_right = 1146.0
 offset_bottom = 59.0
 theme_override_constants/separation = 20
 alignment = 1
 
 [node name="Control" type="Control" parent="ShowToothButtons/HBoxContainer"]
-custom_minimum_size = Vector2(250, 50)
+custom_minimum_size = Vector2(225, 50)
 layout_mode = 2
 
 [node name="Button_Mouth_Adult" type="Button" parent="ShowToothButtons/HBoxContainer/Control"]
-custom_minimum_size = Vector2(250, 50)
-layout_mode = 0
-offset_right = 65.0
-offset_bottom = 50.0
+custom_minimum_size = Vector2(225, 40)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -25.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_styles/focus = SubResource("StyleBoxEmpty_272bh")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_5vw27")
 script = ExtResource("7_272bh")
 mouth_button_name = "adult"
 
 [node name="ColorRect" type="ColorRect" parent="ShowToothButtons/HBoxContainer/Control"]
-custom_minimum_size = Vector2(250, 50)
+custom_minimum_size = Vector2(225, 40)
 layout_mode = 0
-offset_right = 65.0
-offset_bottom = 50.0
+offset_left = -12.0
+offset_right = 213.0
+offset_bottom = 40.0
 mouse_filter = 2
 color = Color(0.246848, 0.641569, 0.707775, 1)
 
 [node name="Label" type="Label" parent="ShowToothButtons/HBoxContainer/Control"]
-custom_minimum_size = Vector2(65, 50)
+custom_minimum_size = Vector2(65, 40)
 layout_mode = 0
-offset_right = 250.0
-offset_bottom = 50.0
+offset_right = 225.0
+offset_bottom = 40.0
 text = "Erwachsenengebiss"
 label_settings = SubResource("LabelSettings_7mycd")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Control2" type="Control" parent="ShowToothButtons/HBoxContainer"]
-custom_minimum_size = Vector2(250, 50)
+custom_minimum_size = Vector2(225, 50)
 layout_mode = 2
 
 [node name="Button_Mouth_Child" type="Button" parent="ShowToothButtons/HBoxContainer/Control2"]
-custom_minimum_size = Vector2(250, 50)
+custom_minimum_size = Vector2(225, 40)
 layout_mode = 0
-offset_right = 65.0
-offset_bottom = 50.0
+offset_right = 225.0
+offset_bottom = 40.0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_kek77")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_4c57u")
 script = ExtResource("7_272bh")
 mouth_button_name = "child"
 
 [node name="ColorRect" type="ColorRect" parent="ShowToothButtons/HBoxContainer/Control2"]
-custom_minimum_size = Vector2(250, 50)
+custom_minimum_size = Vector2(225, 40)
 layout_mode = 0
-offset_right = 65.0
-offset_bottom = 50.0
+offset_right = 225.0
+offset_bottom = 40.0
 mouse_filter = 2
 color = Color(0.580392, 0.580392, 0.580392, 1)
 
 [node name="Label" type="Label" parent="ShowToothButtons/HBoxContainer/Control2"]
-custom_minimum_size = Vector2(65, 50)
+custom_minimum_size = Vector2(65, 40)
 layout_mode = 0
-offset_right = 250.0
-offset_bottom = 50.0
+offset_right = 225.0
+offset_bottom = 40.0
 text = "Kindergebiss"
 label_settings = SubResource("LabelSettings_7mycd")
 horizontal_alignment = 1
